@@ -1,8 +1,8 @@
-package com.example.diplom.controller;
+package com.example.diplom.controllers;
 
-import com.example.diplom.dto.KeyDto;
-import com.example.diplom.model.key.KeyModel;
-import com.example.diplom.service.key.KeyService;
+import com.example.diplom.dtos.KeyDto;
+import com.example.diplom.entities.Key;
+import com.example.diplom.services.key.KeyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -23,11 +23,11 @@ public class KeysManagementController {
 
     @GetMapping("/all")
     public List<KeyDto> getAllKeys() {
-        return KeyModel.toDtoList(keyService.getAllKeys());
+        return Key.toDtoList(keyService.getAllKeys());
     }
 
     @PostMapping("/generate")
-    public KeyDto generateKey(@RequestBody KeyModel keyModel) {
+    public KeyDto generateKey(@RequestBody Key key) {
         return null;
     }
 

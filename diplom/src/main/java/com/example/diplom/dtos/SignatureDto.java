@@ -1,4 +1,4 @@
-package com.example.diplom.dto;
+package com.example.diplom.dtos;
 
 import java.time.LocalDateTime;
 

@@ -1,4 +1,4 @@
-package com.example.diplom.controller;
+package com.example.diplom.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

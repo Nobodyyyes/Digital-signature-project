@@ -1,7 +1,7 @@
-package com.example.diplom.service.key.impl;
+package com.example.diplom.services.key.impl;
 
-import com.example.diplom.model.key.KeyModel;
-import com.example.diplom.service.key.KeyService;
+import com.example.diplom.entities.Key;
+import com.example.diplom.services.key.KeyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,17 +12,17 @@ import java.util.List;
 public class KeyServiceImpl implements KeyService {
 
     @Override
-    public KeyModel getKey(Long id) {
+    public Key getKey(Long id) {
         return null;
     }
 
     @Override
-    public List<KeyModel> getAllKeys() {
+    public List<Key> getAllKeys() {
         return List.of();
     }
 
     @Override
-    public KeyModel generateKey(KeyModel newKey) {
+    public Key generateKey(Key newKey) {
         return null;
     }
 
